@@ -15,7 +15,8 @@ body {
 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family:sans-serif
+    font-family:sans-serif;
+    color: whitesmoke;
 }
 
 form {
@@ -27,6 +28,22 @@ form input[type="text"] {
     flex: 1;
     padding: 12px;
     border-radius: 12px;
+    box-shadow: 0 1px 2px;
+}
+
+form input[type="submit"] {
+    border-radius: 16px;
+    background-color: lightskyblue;
+    cursor:crosshair;
+    box-shadow: 0 1px 3px;
+    flex: 0.2;
+    padding:12px;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(67, 155, 209);
+    
 }
 
 ul {
@@ -37,7 +54,43 @@ ul {
 li {
     padding: 5px;
     display: flex;
+    border-radius: 5px;
     justify-content: space-between;
     background-color: silver;
     margin:5px;
+    align-items:center;
+    font-family: 'Courier New';
+    font-style: bold;
+    font-size: large;
+    text-transform: capitalize;
+}
+
+button {
+    margin: 3px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(155, 78, 78);
+}
+
+#taskCounter {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+.Done {
+    color: rgb(37, 94, 32);
+}
+
+h3 {
+    color:  gray;
+    text-align: center;
 }

@@ -36,10 +36,12 @@ form.addEventListener("submit", function(e) {
         if (checkBox.checked) {
             taskText.style.textDecoration = "line-through";
             count -=1;
+            taskText.classList.add("Done");
         }
         else {
             taskText.style.textDecoration = "none";
             count += 1;
+            taskText.classList.remove("Done");
         }
         Counter.innerHTML = `<strong>Jumlah task yg belum selesai: ${count}</strong>`;
     })
