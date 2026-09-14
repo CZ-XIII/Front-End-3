@@ -63,6 +63,11 @@ li {
     font-style: bold;
     font-size: large;
     text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.Completed {
+    background-color: rgb(174, 238, 174);
 }
 
 button {

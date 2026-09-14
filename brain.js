@@ -37,11 +37,13 @@ form.addEventListener("submit", function(e) {
             taskText.style.textDecoration = "line-through";
             count -=1;
             taskText.classList.add("Done");
+            tskList.classList.add("Completed");
         }
         else {
             taskText.style.textDecoration = "none";
             count += 1;
             taskText.classList.remove("Done");
+            tskList.classList.remove("Completed");
         }
         Counter.innerHTML = `<strong>Jumlah task yg belum selesai: ${count}</strong>`;
     })
